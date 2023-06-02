@@ -11,6 +11,10 @@
   "dependencies": {
     "@react-three/drei": "^9.70.3",
     "@react-three/fiber": "^8.13.0",
+    "@splinetool/loader": "^0.9.354",
+    "@splinetool/r3f-spline": "^1.0.2",
+    "@splinetool/react-spline": "^2.2.6",
+    "@splinetool/runtime": "^0.9.354",
     "@theatre/core": "0.5",
     "@theatre/r3f": "0.5",
     "@theatre/studio": "0.5",

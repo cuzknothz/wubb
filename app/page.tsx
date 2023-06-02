@@ -1,6 +1,6 @@
 'use client'
 
-import { Canvas, useFrame } from '@react-three/fiber'
+import { useFrame } from '@react-three/fiber'
 import { getProject } from '@theatre/core'
 import { SheetProvider, editable as e } from '@theatre/r3f'
 import extension from '@theatre/r3f/dist/extension'
@@ -40,18 +40,10 @@ function Box() {
 
 export default function HomePage() {
   return (
-    <Canvas
-      className="[&>div]:!w-screen [&>div]:!h-screen"
-      camera={{
-        position: [5, 5, -5],
-        fov: 75,
-      }}
-    >
-      <SheetProvider sheet={demoSheet}>
-        <ambientLight />
-        <e.pointLight theatreKey="light" position={[10, 10, 10]} />
-        <Box />
-      </SheetProvider>
-    </Canvas>
+    <SheetProvider sheet={demoSheet}>
+      <ambientLight />
+      <e.pointLight theatreKey="light" position={[10, 10, 10]} />
+      <Box />
+    </SheetProvider>
   )
 }
