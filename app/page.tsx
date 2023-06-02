@@ -1,9 +1,10 @@
 'use client'
+
 import { Canvas, useFrame } from '@react-three/fiber'
 import { getProject } from '@theatre/core'
+import { SheetProvider, editable as e } from '@theatre/r3f'
 import extension from '@theatre/r3f/dist/extension'
 import studio from '@theatre/studio'
-import { editable as e, SheetProvider } from '@theatre/r3f'
 import { useRef } from 'react'
 import * as THREE from 'three'
 import { useImmer } from 'use-immer'
