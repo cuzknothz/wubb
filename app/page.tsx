@@ -1,12 +1,11 @@
 'use client'
-
 import { Canvas } from '@react-three/fiber'
 import { getProject } from '@theatre/core'
 import extension from '@theatre/r3f/dist/extension'
 import studio from '@theatre/studio'
 import { editable as e, SheetProvider } from '@theatre/r3f'
 
-if (process.env.NODE_ENV === 'development') {
+if (process.env.NODE_ENV === 'production') {
   studio.initialize()
   studio.extend(extension)
 }
