@@ -8,7 +8,7 @@ import { useRef } from 'react'
 import * as THREE from 'three'
 import { useImmer } from 'use-immer'
 
-if (process.env.NODE_ENV === 'production') {
+if (process.env.NODE_ENV === 'development') {
   studio.initialize()
   studio.extend(extension)
 }
@@ -40,6 +40,7 @@ function Box() {
 export default function HomePage() {
   return (
     <Canvas
+      className="[&>div]:!w-screen [&>div]:!h-screen"
       camera={{
         position: [5, 5, -5],
         fov: 75,
