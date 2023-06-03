@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react'
 import { clsx } from 'clsx'
 import { Inter } from 'next/font/google'
 import './globals.scss'
@@ -18,6 +19,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={clsx(inter.className)} suppressHydrationWarning={true}>
         {children}
+        <Analytics />
       </body>
     </html>
   )
