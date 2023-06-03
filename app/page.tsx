@@ -5,7 +5,7 @@ import { getProject } from '@theatre/core'
 import { SheetProvider, editable as e } from '@theatre/r3f'
 import extension from '@theatre/r3f/dist/extension'
 import studio from '@theatre/studio'
-import { useRef } from 'react'
+import { Suspense, useRef } from 'react'
 import * as THREE from 'three'
 import { useImmer } from 'use-immer'
 
@@ -40,18 +40,20 @@ function Box() {
 
 export default function HomePage() {
   return (
-    <Canvas
-      className="[&>div]:!w-screen [&>div]:!h-screen"
-      camera={{
-        position: [5, 5, -5],
-        fov: 75,
-      }}
-    >
-      <SheetProvider sheet={demoSheet}>
-        <ambientLight />
-        <e.pointLight theatreKey="light" position={[10, 10, 10]} />
-        <Box />
-      </SheetProvider>
-    </Canvas>
+    <Suspense>
+      <Canvas
+        className="[&>div]:!w-screen [&>div]:!h-screen"
+        camera={{
+          position: [5, 5, -5],
+          fov: 75,
+        }}
+      >
+        <SheetProvider sheet={demoSheet}>
+          <ambientLight />
+          <e.pointLight theatreKey="light" position={[10, 10, 10]} />
+          <Box />
+        </SheetProvider>
+      </Canvas>
+    </Suspense>
   )
 }

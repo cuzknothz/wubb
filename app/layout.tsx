@@ -1,7 +1,7 @@
+import '@/scss/index.scss'
 import { Analytics } from '@vercel/analytics/react'
 import { clsx } from 'clsx'
 import { Inter } from 'next/font/google'
-import './globals.scss'
 
 const inter = Inter({ subsets: ['latin'] })
 
