@@ -5,9 +5,11 @@ import { getProject } from '@theatre/core'
 import { SheetProvider, editable as e } from '@theatre/r3f'
 import extension from '@theatre/r3f/dist/extension'
 import studio from '@theatre/studio'
+import { useRouter } from 'next/navigation'
 import { Suspense, useRef } from 'react'
 import * as THREE from 'three'
 import { useImmer } from 'use-immer'
+import { useEffect } from 'react'
 
 if (process.env.NODE_ENV === 'development') {
   studio.initialize()
@@ -39,6 +41,10 @@ function Box() {
 }
 
 export default function HomePage() {
+  const router = useRouter()
+  useEffect(() => {
+    router.push('/dev')
+  }, [router])
   return (
     <Suspense>
       <Canvas
