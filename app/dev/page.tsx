@@ -9,22 +9,15 @@ export default function Hi() {
   const ref2 = useRef<HTMLDivElement>(null)
   useEffect(() => {
     gsap.to(ref.current!, {
-      translateY: '-100%',
+      translateY: '-100vh',
       duration: 2,
       ease: 'power4.inOut',
       delay: 2,
     })
-    // gsap.to(ref2.current!, {
-    //   translateY: '0',
-    //   duration: 1.5,
-    // })
   }, [])
   return (
-    <main>
-      <div
-        ref={ref}
-        className="w-screen h-screen  bg-black fixed flex justify-center items-center"
-      >
+    <main ref={ref} className="w-full h-screen">
+      <div className="w-full h-screen  bg-black flex justify-center items-center">
         <svg
           className="invert w-[150px]"
           viewBox="0 0 11 4"
@@ -71,7 +64,7 @@ export default function Hi() {
       </div>
       <div
         ref={ref2}
-        className="w-screen h-screen bg-blue-300/20 flex justify-center items-center "
+        className="w-full h-screen bg-blue-300/20 flex justify-center items-center "
       >
         🥕 This site is under development
       </div>
