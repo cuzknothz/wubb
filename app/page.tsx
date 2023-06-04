@@ -42,7 +42,6 @@ function Box() {
 
 export default function HomePage() {
   const router = useRouter()
-  router.push('/dev')
   useEffect(() => {
     router.push('/dev')
   }, [router])
