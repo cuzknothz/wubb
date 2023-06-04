@@ -43,7 +43,9 @@ function Box() {
 export default function HomePage() {
   const router = useRouter()
   useEffect(() => {
-    router.push('/dev')
+    if (process.env.NODE_ENV === 'production') {
+      router.push('/dev')
+    }
   }, [router])
   return (
     <Suspense>
