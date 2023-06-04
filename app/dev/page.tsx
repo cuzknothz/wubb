@@ -65,7 +65,7 @@ export default function Hi() {
         </div>
         <div
           ref={ref2}
-          className="w-full h-screen bg-blue-300/20 flex justify-center items-center "
+          className="w-full h-screen  flex justify-center items-center text-[1rem]"
         >
           🥕 This site is under development
         </div>
