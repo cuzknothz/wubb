@@ -1,18 +1,16 @@
 'use client'
-import React, { useEffect, useRef } from 'react'
 import { gsap } from 'gsap'
-import Image from 'next/image'
-import Logo from '@/svg/CUZKNOTHZ.svg'
+import { useEffect, useRef } from 'react'
 
-export default function Hi() {
+export const Dev = () => {
   const ref = useRef<HTMLDivElement>(null)
   const ref2 = useRef<HTMLDivElement>(null)
   useEffect(() => {
     gsap.to(ref.current!, {
       translateY: '-100vh',
-      duration: 2,
+      duration: 1,
       ease: 'power4.inOut',
-      delay: 2,
+      delay: 3,
     })
   }, [])
   return (
@@ -67,7 +65,8 @@ export default function Hi() {
           ref={ref2}
           className="w-full h-screen  flex justify-center items-center text-[1rem]"
         >
-          🥕 This site is under development
+          <span className="">🥕</span>
+          <span>This site is under development</span>
         </div>
       </main>
     </div>

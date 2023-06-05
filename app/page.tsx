@@ -1,15 +1,14 @@
 'use client'
 
-import { useFrame, Canvas } from '@react-three/fiber'
+import { Dev } from '@/components/Dev'
+import { Canvas, useFrame } from '@react-three/fiber'
 import { getProject } from '@theatre/core'
 import { SheetProvider, editable as e } from '@theatre/r3f'
 import extension from '@theatre/r3f/dist/extension'
 import studio from '@theatre/studio'
-import { useRouter } from 'next/navigation'
 import { Suspense, useRef } from 'react'
 import * as THREE from 'three'
 import { useImmer } from 'use-immer'
-import { useEffect } from 'react'
 
 if (process.env.NODE_ENV === 'development') {
   studio.initialize()
@@ -41,12 +40,9 @@ function Box() {
 }
 
 export default function HomePage() {
-  const router = useRouter()
-  useEffect(() => {
-    if (process.env.NODE_ENV === 'production') {
-      router.push('/dev')
-    }
-  }, [router])
+  if (process.env.NODE_ENV === 'production') {
+    return <Dev />
+  }
   return (
     <Suspense>
       <Canvas
