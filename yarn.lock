@@ -68,12 +68,12 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
-"@eslint/js@8.41.0":
-  version "8.41.0"
-  resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.41.0.tgz#080321c3b68253522f7646b55b577dd99d2950b3"
-  integrity sha512-LxcyMGxwmTh2lY9FwHPGWOHmYFCZvbrFCBZL4FzSSsxsRPuhrYUg/49/0KDfW8tnIEaEHtfmn6+NPN+1DqaNmA==
+"@eslint/js@8.42.0":
+  version "8.42.0"
+  resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.42.0.tgz#484a1d638de2911e6f5a30c12f49c7e4a3270fb6"
+  integrity sha512-6SWlXpWU5AvId8Ac7zjzmIOqMOba/JWY8XZ4A7q7Gn1Vlfg/SFFIlrtHXt9nPn4op9ZPAkl91Jao+QQv3r/ukw==
 
-"@humanwhocodes/config-array@^0.11.8":
+"@humanwhocodes/config-array@^0.11.10":
   version "0.11.10"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/config-array/-/config-array-0.11.10.tgz#5a3ffe32cc9306365fb3fd572596cd602d5e12d2"
   integrity sha512-KVVjQmNUepDVGXNuoRRdmmEjruj0KfiGSbS8LVc12LMsWDQzRXJ0qdhN8L8uUigKpfEHRhlaQFY0ib1tnUbNeQ==
@@ -128,6 +128,11 @@
   dependencies:
     "@jridgewell/resolve-uri" "3.1.0"
     "@jridgewell/sourcemap-codec" "1.4.14"
+
+"@mediapipe/tasks-vision@^0.10.0":
+  version "0.10.1"
+  resolved "https://registry.yarnpkg.com/@mediapipe/tasks-vision/-/tasks-vision-0.10.1.tgz#68047459352019cc141dc9c1d15c05b8ab689423"
+  integrity sha512-/zIKjOAIABx+KVfqe8hA6X2pxBGsBYlEtvD7/gpXecvzKefo/JQO6XaggmJul7+noaqiPYM0CVGZxmFJ2oTdSQ==
 
 "@next/env@13.4.4":
   version "13.4.4"
@@ -464,12 +469,13 @@
   resolved "https://registry.yarnpkg.com/@react-spring/types/-/types-9.6.1.tgz#913d3a68c5cbc1124fdb18eff919432f7b6abdde"
   integrity sha512-POu8Mk0hIU3lRXB3bGIGe4VHIwwDsQyoD1F394OK7STTiX9w4dG3cTLljjYswkQN+hDSHRrj4O36kuVa7KPU8Q==
 
-"@react-three/drei@^9.70.3":
-  version "9.70.3"
-  resolved "https://registry.yarnpkg.com/@react-three/drei/-/drei-9.70.3.tgz#3dbb40f06b9c3ec78b0f16d2e6b704a88f3111b5"
-  integrity sha512-o1V+cHGVYJwExwlsC6LuBtQ9crtuBmUnr42aDiujCzc4WX4NDRcAPBBi4z9cBlqB7NtsMfh+n8UotXmA3rc4Vg==
+"@react-three/drei@^9.74.5":
+  version "9.74.5"
+  resolved "https://registry.yarnpkg.com/@react-three/drei/-/drei-9.74.5.tgz#a7c751d51cef90197046b7de9245dc586e7c5f53"
+  integrity sha512-M7w7CKBJiYLUfrIh7JcBPxUf9/vCkq9G+iupUvz+DPvaK9sQKvxXsj1t/4FKOBmWyv503E9PRbg0hzAnxYFHSg==
   dependencies:
     "@babel/runtime" "^7.11.2"
+    "@mediapipe/tasks-vision" "^0.10.0"
     "@react-spring/three" "~9.6.1"
     "@use-gesture/react" "^10.2.24"
     camera-controls "^2.3.1"
@@ -509,10 +515,10 @@
   resolved "https://registry.yarnpkg.com/@rushstack/eslint-patch/-/eslint-patch-1.3.0.tgz#f5635b36fc0dad96ef1e542a302cd914230188c0"
   integrity sha512-IthPJsJR85GhOkp3Hvp8zFOPK5ynKn6STyHa/WZpioK7E1aYDiBzpqQPrngc14DszIUkIrdd3k9Iu0XSzlP/1w==
 
-"@splinetool/loader@^0.9.354":
-  version "0.9.354"
-  resolved "https://registry.yarnpkg.com/@splinetool/loader/-/loader-0.9.354.tgz#29f8758782e7aae12347423e32c5a67e517025a7"
-  integrity sha512-ooJ8mz/ognECG+DPGs9w3s/oHTjqkmFX78avE7SARQHM+xQexJuzEQi2gLk69e0BoN7sQCe1SopzS3K1tshQtg==
+"@splinetool/loader@^0.9.361":
+  version "0.9.361"
+  resolved "https://registry.yarnpkg.com/@splinetool/loader/-/loader-0.9.361.tgz#4a631c63125567b5fdc2037dd39179a8bc02bc7d"
+  integrity sha512-9Ih+Km0JLf3LpepvdfdvMmSjmIMmkX0Np1iCLyWPeUndPzxHnA0isedf7nWvtP9+Wa0zZ+MC8naM4eppcSQMTg==
   dependencies:
     semver-compare "^1.0.0"
 
@@ -529,10 +535,10 @@
     lodash.debounce "^4.0.8"
     react-merge-refs "^2.0.1"
 
-"@splinetool/runtime@^0.9.354":
-  version "0.9.354"
-  resolved "https://registry.yarnpkg.com/@splinetool/runtime/-/runtime-0.9.354.tgz#c2d71bc879b561df36bea08bb932ec5b92d3f560"
-  integrity sha512-m1/vs0MNcleUg35Wnk/im1rRfSEfjHZtcSUVEC0JE5UeQtYkRLMqidyB4Fca2XFkMegnJYa+GwRKsY5tq+ulJA==
+"@splinetool/runtime@^0.9.361":
+  version "0.9.361"
+  resolved "https://registry.yarnpkg.com/@splinetool/runtime/-/runtime-0.9.361.tgz#e6f3362567e59d3b865fcb799a5d5c539292dd85"
+  integrity sha512-8VCw5aZAQHkefe2rQKx3OaQxpWWA5lS2EHG5w00os4pOOJkF+NNaKWAQMLGuCrbb9DOIdzORpWFQXMysineeYA==
   dependencies:
     on-change "^4.0.0"
     semver-compare "^1.0.0"
@@ -549,31 +555,31 @@
   dependencies:
     tslib "^2.4.0"
 
-"@theatre/core@0.5":
-  version "0.5.1"
-  resolved "https://registry.yarnpkg.com/@theatre/core/-/core-0.5.1.tgz#5a10b8a9a8e5887371e870732c043340a6f5be5a"
-  integrity sha512-LV3LwHPWVm62bR6DUQ55t4kCaI1KGrz+rPLoA6pMJ57x+6vBpoSCI0b11gJPdA1mCXebcNWN+U5M3PP6jJaSSg==
+"@theatre/core@0.6.1":
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/@theatre/core/-/core-0.6.1.tgz#db572cfd8c527deed50f2e8da49c693052e8447f"
+  integrity sha512-ZvSqAAB2LVVnB6hDzKQOVHjeZtb7Hvqu1IrFRITv4Kq6465Cn9VI2nwcDjelDCOmTIv23pd8d3Fz2DPYjjF9mg==
   dependencies:
-    "@theatre/dataverse" "0.5.1"
+    "@theatre/dataverse" "0.6.1"
 
-"@theatre/dataverse@0.5.1":
-  version "0.5.1"
-  resolved "https://registry.yarnpkg.com/@theatre/dataverse/-/dataverse-0.5.1.tgz#75dd106de042fe11265314edefa98d0045714405"
-  integrity sha512-oTjR8fNDbY11GSp7kw8quuOE9IC/5qzTe++OjFgn5enHKcFSaSPAZ8SIyOs+Im9bYgjcJFg/AYgU3Xi/MENgwQ==
+"@theatre/dataverse@0.6.1":
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/@theatre/dataverse/-/dataverse-0.6.1.tgz#5a0870da55f18f95e9b1c78b16f196deea425754"
+  integrity sha512-iomovt4oWCEAZFP6/BdSJAb2cAjPOs6y3wh7QlrUBmEwdQ/21ISK9N2IsCzlJ0t16w58l7Eh61Gw60Y0t7/uNA==
   dependencies:
     lodash-es "^4.17.21"
 
-"@theatre/r3f@0.5":
-  version "0.5.1"
-  resolved "https://registry.yarnpkg.com/@theatre/r3f/-/r3f-0.5.1.tgz#7c47d653ff879ecd26b53fe15846825fce89f627"
-  integrity sha512-y42yxafM2kjk1iQImZPp7+qe21OviZhSY9h1Lh07YZWWSeMRoK1rASqtY+DQvawh8IqOT4ySBUX/zMBPoaRvPQ==
+"@theatre/r3f@0.6.1":
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/@theatre/r3f/-/r3f-0.6.1.tgz#4df1973ce58e11974825a8e382678a865728275f"
+  integrity sha512-tUGu+NxXu8znEgAFzBskxOWCpf16fc6yHkKyljeSQ737ad3srF8ht1zo3gbF9ZDxJJMFwtPAVwy18vx1z7+yTw==
 
-"@theatre/studio@0.5":
-  version "0.5.1"
-  resolved "https://registry.yarnpkg.com/@theatre/studio/-/studio-0.5.1.tgz#1dbe3d99943b1e628b7e5722499290961ba74c12"
-  integrity sha512-6r8JjSdUhL8JXMLlnhOLLFc/Br5Ddcq4EQmwUSCEBbFuJZcyb++GxV23p5W7a0DiB7NgtKdORj77n5NBt0WEpA==
+"@theatre/studio@0.6.1":
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/@theatre/studio/-/studio-0.6.1.tgz#bcba7af8170dba525ec2c92c8818bc24a8f78e7f"
+  integrity sha512-aJlHnfYctYbw2zDd+AK0ts4oKR4RuiQZCgMhANKv8VucINFqfDFcl6ixN6qxCTQfBFe4s/qyyc9y/9Np1ZCPwQ==
   dependencies:
-    "@theatre/dataverse" "0.5.1"
+    "@theatre/dataverse" "0.6.1"
 
 "@tweenjs/tween.js@~18.6.4":
   version "18.6.4"
@@ -1447,16 +1453,16 @@ eslint-visitor-keys@^3.3.0, eslint-visitor-keys@^3.4.1:
   resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-3.4.1.tgz#c22c48f48942d08ca824cc526211ae400478a994"
   integrity sha512-pZnmmLwYzf+kWaM/Qgrvpen51upAktaaiI01nsJD/Yr3lMOdNtq0cxkrrg16w64VtisN6okbs7Q8AfGqj4c9fA==
 
-eslint@8.41.0:
-  version "8.41.0"
-  resolved "https://registry.yarnpkg.com/eslint/-/eslint-8.41.0.tgz#3062ca73363b4714b16dbc1e60f035e6134b6f1c"
-  integrity sha512-WQDQpzGBOP5IrXPo4Hc0814r4/v2rrIsB0rhT7jtunIalgg6gYXWhRMOejVO8yH21T/FGaxjmFjBMNqcIlmH1Q==
+eslint@8.42.0:
+  version "8.42.0"
+  resolved "https://registry.yarnpkg.com/eslint/-/eslint-8.42.0.tgz#7bebdc3a55f9ed7167251fe7259f75219cade291"
+  integrity sha512-ulg9Ms6E1WPf67PHaEY4/6E2tEn5/f7FXGzr3t9cBMugOmf1INYvuUwwh1aXQN4MfJ6a5K2iNwP3w4AColvI9A==
   dependencies:
     "@eslint-community/eslint-utils" "^4.2.0"
     "@eslint-community/regexpp" "^4.4.0"
     "@eslint/eslintrc" "^2.0.3"
-    "@eslint/js" "8.41.0"
-    "@humanwhocodes/config-array" "^0.11.8"
+    "@eslint/js" "8.42.0"
+    "@humanwhocodes/config-array" "^0.11.10"
     "@humanwhocodes/module-importer" "^1.0.1"
     "@nodelib/fs.walk" "^1.2.8"
     ajv "^6.10.0"
