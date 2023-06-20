@@ -1,2 +1,7 @@
 @import './tw.scss';
 @import './custom-scroll-bar';
+
+canvas {
+  width: 100vw;
+  height: 100vh;
+}
