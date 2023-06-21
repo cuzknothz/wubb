@@ -1,9 +1,9 @@
 'use client'
 
 import { Container, Sprite, Stage, useTick } from '@pixi/react'
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { settings, SCALE_MODES } from 'pixi.js'
-
+import { useWindowSize } from 'react-use'
 settings.SCALE_MODE = SCALE_MODES.NEAREST
 
 const RotatingBunny = () => {
@@ -22,28 +22,30 @@ const RotatingBunny = () => {
 }
 
 const PixiApp = () => {
-  const [width, setWidth] = useState(0)
-  const [height, setHeight] = useState(0)
+  const { width, height } = useWindowSize()
 
   const [bunnyX, setBunnyX] = useState(0)
   const [bunnyY, setBunnyY] = useState(0)
 
   useEffect(() => {
-    setWidth(window.innerWidth)
-    setHeight(window.innerHeight)
-    setBunnyX(window.innerWidth / 2)
-    setBunnyY(window.innerHeight / 2)
     const cb = () => {
-      setWidth(window.innerWidth)
-      setHeight(window.innerHeight)
       setBunnyX(window.innerWidth / 2)
       setBunnyY(window.innerHeight / 2)
     }
-
+    cb()
     window.addEventListener('resize', cb)
   }, [])
   return (
-    <Stage width={width} height={height} renderOnComponentChange={true}>
+    <Stage
+      width={width}
+      height={height}
+      renderOnComponentChange={true}
+      options={{
+        antialias: true,
+        background: 'white',
+        hello: true,
+      }}
+    >
       <Container position={[bunnyX, bunnyY]}>
         <RotatingBunny />
       </Container>
